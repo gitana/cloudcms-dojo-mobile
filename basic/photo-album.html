@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>Cloud CMS Photo Album</title>
+    <link href="http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dojox/mobile/themes/iphone/iphone.css"
+          rel="stylesheet"/>
+    <link href="../css/cloudcms.css"
+          rel="stylesheet"/>
+    <script src="../lib/cloudcms/gitana.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dojo/dojo.js.uncompressed.js"></script>
+
+    <script src="../js/basic/PhotoAlbum.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        require([
+            "dojo/_base/connect",
+            "dojo/store/Memory",
+            "dojo/ready",
+            "dijit/registry",
+            "dojox/mobile/parser",
+            "dojox/mobile",
+            "dojox/mobile/compat",
+            "dojox/mobile/ScrollableView",
+            "dojox/mobile/StoreCarousel"
+        ]);
+    </script>
+</head>
+<body style="visibility:hidden;background-color:#6D6D6D">
+	<div id="photo-album">
+	</div>
+</body>
+</html>
