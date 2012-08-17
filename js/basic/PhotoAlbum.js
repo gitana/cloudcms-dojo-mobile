@@ -33,19 +33,19 @@ dojo.ready(function() {
                     });
                 }
             }).then(function() {
-                    var store = new dojo.store.Memory({
-                        id : "store",
-                        data: images
-                    });
-                    var carousel = new dojox.mobile.StoreCarousel({
-                        height : "560px",
-                        store : store,
-                        numVisible : 1,
-                        title : "Photo Gallery",
-                        selectable : false
-                    });
-                    view.addChild(carousel);
+                var store = new dojo.store.Memory({
+                    id : "store",
+                    data: images
                 });
+                var carousel = new dojox.mobile.StoreCarousel({
+                    height : "560px",
+                    store : store,
+                    numVisible : 1,
+                    title : "Photo Gallery",
+                    selectable : false
+                });
+                view.addChild(carousel);
+            });
         });
     });
 });
